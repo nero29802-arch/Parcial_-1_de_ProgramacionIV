@@ -15,7 +15,7 @@ public  abstract class Persona {
         this.identificacion = identificacion;
         this.direccion = direccion;
     }
-    
+     
     
     /*
               Getters and Setters

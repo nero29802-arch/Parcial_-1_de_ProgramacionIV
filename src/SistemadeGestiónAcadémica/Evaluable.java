@@ -12,3 +12,4 @@ public interface Evaluable { // creacion de una nueva clase de interface evaluab
     public void evaluar();
 
 }
+  
