@@ -40,9 +40,18 @@ public class Estudiante extends Persona {
         this.carrera = carrera;
     }
 
+    public void mostrarInfo() {
+    System.out.println("=== INFORMACIÓN DEL ESTUDIANTE ===");
+    System.out.println("Nombre      : " + getNombre());
+    System.out.println("Carrera     : " + carrera);
+    System.out.println("Dirección   : " + getDireccion());
+    System.out.println("País        : " + PAIS);
+    mostrarIdentificacion();
+    }
+
     public TipoPersona getTipo() {
         return tipo;
-    }
+    }   
 
     /**
      * Implementación del método abstracto describirRol() de Persona.
