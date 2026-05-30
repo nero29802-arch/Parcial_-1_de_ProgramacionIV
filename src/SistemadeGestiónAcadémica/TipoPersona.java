@@ -10,3 +10,4 @@ public enum TipoPersona {
      ESTUDIANTE,
      DOCENTE
 }
+ 

@@ -12,7 +12,9 @@ package SistemadeGestiónAcadémica;
  * uso de super para llamar al constructor de la superclase,
  * y sobrescritura del método abstracto describirRol().
  */
-public class Estudiante extends Persona {
+
+//nueva clase Estudiante utilizando extends en la clase Persona y implementando un Evaluable # Unidad 3
+public class Estudiante extends Persona implements Evaluable { // # modificado por la Unidad 3
 
     // Atributo específico de Estudiante
     private String carrera;
@@ -69,9 +71,17 @@ public class Estudiante extends Persona {
     @Override
     public String toString() {
         return "[ ESTUDIANTE ] " + getNombre()
-                + " | ID: " + getIdentiicacion()
+                + " | ID: " + getIdentificacion()
                 + " | Carrera: " + carrera
                 + " | Dirección: " + getDireccion()
                 + " | País: " + PAIS;
     }
+    
+    @Override // # Agregado por la Unidad 3
+    public void evaluar() {
+         System.out.println("Evaluando estudiante: " + getNombre());
+    }
+    // nuevo metodo override para evaluar al estudiante # Unidad 3
+    
 }
+

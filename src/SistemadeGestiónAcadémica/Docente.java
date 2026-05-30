@@ -60,9 +60,10 @@ public class Docente extends Persona {
     @Override
     public String toString() {
         return "[ DOCENTE ] " + getNombre()
-                + " | ID: " + getIdentiicacion()
+                + " | ID: " + getIdentificacion()
                 + " | Especialidad: " + especialidad
                 + " | Dirección: " + getDireccion()
                 + " | País: " + PAIS;
     }
 }
+
