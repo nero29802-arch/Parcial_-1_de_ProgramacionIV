@@ -15,7 +15,7 @@ public  abstract class Persona {
         this.identificacion = identificacion;
         this.direccion = direccion;
     }
-    
+     
     
     /*
               Getters and Setters
@@ -32,7 +32,7 @@ public  abstract class Persona {
     }
     
     
-    public String getIdentiicacion() {
+    public String getIdentificacion() {
         return identificacion;
     }
     
@@ -55,13 +55,13 @@ public  abstract class Persona {
     */
     
     
-    public final void mostrarIdentificacion() {
+    public final void mostrarIdentificacion() { //declaracion de un metodo final # Unidad 3
         System.out.println("Identificación:" + this.identificacion);
     
     }
     
     
-    public abstract void describirRol();
+    public abstract void describirRol();//declaracion de un nuevo metodo abstracto #Unidad 3
     
     
     @Override
