@@ -30,26 +30,20 @@ public class Main { // creacion de una clase main # Unidad 3
         Scanner sc = new Scanner(System.in);
 
         /*
-         Jerarquía básica de excepciones en Java # Unidad 4
+        Explicación de excepciones en Java # Unidad 4
 
-         Throwable
-             |
-             >-- Exception
-             |      |
-             |      >-- RuntimeException
-             |              |
-             |              >-- NumberFormatException
-             |              >-- IllegalArgumentException
-             |
-             -- DatosAcademicosException
+        Exception es la clase utilizada para manejar errores
+        que pueden ocurrir durante la ejecución del programa.
 
-         Throwable es la clase padre de todas las excepciones.
-         Exception representa excepciones que pueden manejarse.
-         RuntimeException representa errores durante la ejecución.
-         NumberFormatException ocurre cuando se convierte texto a número.
-         IllegalArgumentException ocurre cuando se envía un argumento inválido.
-         DatosAcademicosException es una excepción personalizada.
-         */
+        NumberFormatException se produce cuando el usuario
+        ingresa texto en lugar de un número.
+
+        IllegalArgumentException se utiliza cuando se selecciona
+        una opción inválida dentro del menú.
+
+        DatosAcademicosException es una excepción personalizada
+        creada para validar los datos ingresados en el sistema.
+        */
 
         // aca se hace la creacion de una lista para iniciar la aplicacion del polimorfismo # Unidad 3
         ArrayList<Persona> lista = new ArrayList<>();
